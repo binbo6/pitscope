@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<title>报告生成：固定数据表与证据约束下的文字分析</title><desc>将统计、解释与排版分开，形成可编辑、可复算、可追溯的报告初稿</desc><defs>
+<marker id="aCEDBD4" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#CEDBD4"/></marker>
+<marker id="a647D72" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#647D72"/></marker>
+</defs>
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#F6F8F5" stroke="none" stroke-width="1.4"/>
+<rect x="0" y="0" width="17" height="900" rx="0" fill="#24634F" stroke="none" stroke-width="1.4"/>
+<text x="68" y="52.0" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#24634F" text-anchor="start">04  /  REPORT GENERATION</text>
+<text x="68" y="118.0" font-family="Microsoft YaHei, sans-serif" font-size="43" font-weight="700" fill="#173F35" text-anchor="start">报告生成：固定数据表与证据约束下的文字分析</text>
+<text x="70" y="160.0" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#647D72" text-anchor="start">将统计、解释与排版分开，形成可编辑、可复算、可追溯的报告初稿</text>
+<rect x="70" y="209" width="420" height="174" rx="13" fill="#E9F2EC" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="71" y="225" width="5" height="142" rx="0" fill="#24634F" stroke="none" stroke-width="1.4"/>
+<text x="92" y="251.0" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#24634F" text-anchor="start">程序负责：确定性统计</text>
+<text x="92" y="288.5" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#647D72" text-anchor="start">字段 / 单位校验、分区极值与位置</text>
+<text x="92" y="319.58" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#647D72" text-anchor="start">按部位和方向匹配控制指标</text>
+<text x="92" y="350.65999999999997" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#647D72" text-anchor="start">生成固定结果表</text>
+<rect x="590" y="209" width="420" height="174" rx="13" fill="#FFFFFF" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="591" y="225" width="5" height="142" rx="0" fill="#24634F" stroke="none" stroke-width="1.4"/>
+<text x="612" y="251.0" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#24634F" text-anchor="start">检索负责：可查证据</text>
+<text x="612" y="288.5" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#647D72" text-anchor="start">勘察背景、规范片段、项目说明</text>
+<text x="612" y="319.58" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#647D72" text-anchor="start">来源 / 版本说明 / 物理页码</text>
+<text x="612" y="350.65999999999997" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#647D72" text-anchor="start">形成 [E1…En]</text>
+<rect x="1110" y="209" width="420" height="174" rx="13" fill="#EAF0F4" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="1111" y="225" width="5" height="142" rx="0" fill="#34657A" stroke="none" stroke-width="1.4"/>
+<text x="1132" y="251.0" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#34657A" text-anchor="start">模型负责：工程解释</text>
+<text x="1132" y="288.5" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#647D72" text-anchor="start">阶段特征、机制分析方向</text>
+<text x="1132" y="319.58" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#647D72" text-anchor="start">监测建议、缺项与复核事项</text>
+<text x="1132" y="350.65999999999997" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#647D72" text-anchor="start">只基于提供的摘要与证据</text>
+<rect x="220" y="451" width="1160" height="139" rx="13" fill="#FFFFFF" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="221" y="467" width="5" height="107" rx="0" fill="#24634F" stroke="none" stroke-width="1.4"/>
+<text x="242" y="496.0" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" fill="#24634F" text-anchor="start">固定报告模板：8 个章节</text>
+<text x="242" y="536.76" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#647D72" text-anchor="start">工程概况 → 资料依据 → 数据与方法 → 分阶段统计 → 控制指标比较</text>
+<text x="242" y="570.8" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#647D72" text-anchor="start">→ 变形分析与建议 → 结论和限制 → 证据与数据附件</text>
+<polyline points="280,385 280,418 800,418 800,445" fill="none" stroke="#647D72" stroke-width="2" stroke-linejoin="round" marker-end="url(#a647D72)"/>
+<polyline points="800,385 800,418 800,418 800,445" fill="none" stroke="#647D72" stroke-width="2" stroke-linejoin="round" marker-end="url(#a647D72)"/>
+<polyline points="1320,385 1320,418 800,418 800,445" fill="none" stroke="#647D72" stroke-width="2" stroke-linejoin="round" marker-end="url(#a647D72)"/>
+<rect x="70" y="644" width="335" height="106" rx="13" fill="#E9F2EC" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="71" y="660" width="5" height="74" rx="0" fill="#24634F" stroke="none" stroke-width="1.4"/>
+<text x="92" y="686.0" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#24634F" text-anchor="start">Word / DOCX</text>
+<text x="92" y="721.5" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#647D72" text-anchor="start">可编辑正文与原生表格</text>
+<polyline points="800,592 800,616 238,616 238,638" fill="none" stroke="#647D72" stroke-width="2" stroke-linejoin="round" marker-end="url(#a647D72)"/>
+<rect x="445" y="644" width="335" height="106" rx="13" fill="#E9F2EC" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="446" y="660" width="5" height="74" rx="0" fill="#24634F" stroke="none" stroke-width="1.4"/>
+<text x="467" y="686.0" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#24634F" text-anchor="start">PDF</text>
+<text x="467" y="721.5" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#647D72" text-anchor="start">中文排版与分页成果</text>
+<polyline points="800,592 800,616 613,616 613,638" fill="none" stroke="#647D72" stroke-width="2" stroke-linejoin="round" marker-end="url(#a647D72)"/>
+<rect x="820" y="644" width="335" height="106" rx="13" fill="#E9F2EC" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="821" y="660" width="5" height="74" rx="0" fill="#24634F" stroke="none" stroke-width="1.4"/>
+<text x="842" y="686.0" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#24634F" text-anchor="start">Markdown / HTML</text>
+<text x="842" y="721.5" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#647D72" text-anchor="start">复制正文与浏览器阅读</text>
+<polyline points="800,592 800,616 988,616 988,638" fill="none" stroke="#647D72" stroke-width="2" stroke-linejoin="round" marker-end="url(#a647D72)"/>
+<rect x="1195" y="644" width="335" height="106" rx="13" fill="#E9F2EC" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="1196" y="660" width="5" height="74" rx="0" fill="#24634F" stroke="none" stroke-width="1.4"/>
+<text x="1217" y="686.0" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#24634F" text-anchor="start">JSON 证据附件</text>
+<text x="1217" y="721.5" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#647D72" text-anchor="start">片段、计算摘要、生成元数据</text>
+<polyline points="800,592 800,616 1363,616 1363,638" fill="none" stroke="#647D72" stroke-width="2" stroke-linejoin="round" marker-end="url(#a647D72)"/>
+<text x="76" y="807.0" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#647D72" text-anchor="start">正式交付前：真实数据替换 + 设计控制值核实 + 模型 / 监测质量复核 + 专业人员签认</text>
+<polyline points="70,835 1530,835" fill="none" stroke="#CEDBD4" stroke-width="1" stroke-linejoin="round"/>
+<text x="70" y="864.0" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#647D72" text-anchor="start">依据：pit/analysis.py、assistant.py、reporting.py；deliverables/示范报告*</text>
+<text x="1530" y="864.0" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#24634F" text-anchor="end">PitScope  |  05 / 10</text>
+</svg>

@@ -1,0 +1,115 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>基坑工程分析报告</title>
+    <style>@page{size:A4;margin:20mm}body{font-family:"Microsoft YaHei",sans-serif;color:#20312f;line-height:1.8;max-width:850px;margin:32px auto;padding:0 24px}h1{font-size:27px}h2{font-size:18px;border-bottom:1px solid #ccd9d5;padding-bottom:8px}table{width:100%;border-collapse:collapse;font-size:12px}th,td{border:1px solid #cdd9d6;padding:7px;text-align:left}th{background:#edf4f1}p,li{font-size:13px}code{overflow-wrap:anywhere}@media print{body{margin:0;padding:0}h2{break-after:avoid}tr{break-inside:avoid}}</style><h1>基坑沉降与坑底隆起监测分析报告</h1>
+<p><strong>流程演示稿 · 合成数据 · 非现场检测成果</strong></p>
+<p>项目：公开演示 · 基坑沉降与隆起分析<br />
+编号：DEMO-PIT-001<br />
+报告日期：2026-11-24<br />
+分析范围：地表竖向位移、坑底竖向位移及阶段变化<br />
+文字生成：deepseek-chat；数值表由 Python 确定性计算</p>
+<h2>1 工程概况与分析目的</h2>
+<p>本案例使用公开仓库自带的完全虚构勘察背景，演示开挖深度取 15.7 m，支护形式假定为地下连续墙 + 内支撑（虚构方案）。本报告展示资料检索、合成位移统计、工程分析与报告导出的完整流程。工程背景与位移均不对应真实项目。</p>
+<p>地质与周边环境说明来自 synthetic_geotech.md。异项目示例默认排除于当前案例的问答。检测仪器、精度检定、实际人员和签章资料均不存在。</p>
+<h2>2 编制依据与资料适用性</h2>
+<p>本次资料包括虚构勘察说明、演示监测要求、分析方法、案例说明和规范来源目录。具体检索原文与来源见第 8 节。规范来源目录只提供检索入口，不包含真实条文或沉降限值。</p>
+<p>demo_monitoring_guide.md 使用 DEMO-M01 等编号描述人为构造的演示要求，不能作为工程规范引用。公开版未附带第三方规范全文或原始勘察报告；正式项目须自行上传有权使用的资料，并核实版本、适用范围和控制依据。</p>
+<h2>3 数据来源、坐标与统计方法</h2>
+<p>本次使用 4 个阶段 CSV，各阶段地表含 72 个节点，坑底含 35 个节点。数据由演示脚本生成，既非现场观测，也非实际 FLAC3D 求解输出。[D1]</p>
+<p>坐标及位移以 m 为单位，Y 轴正向朝下；settlement_mm = 1000 × uy_m，正值表示沉降，负值表示隆起。数据基准为相对于同一初始基准的累计位移。程序校验字段、重复节点、非有限数值和米毫米换算，分别提取地表最大向下位移与坑底最大向上位移。各阶段累计位移不得相加。</p>
+<h2>4 分阶段位移统计</h2>
+<table>
+<thead>
+<tr>
+<th>工况</th>
+<th>日期</th>
+<th style="text-align: right;">开挖深度 m</th>
+<th style="text-align: right;">地表最大沉降 mm</th>
+<th style="text-align: right;">坑底最大隆起 mm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>2026-10-15</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3.800</td>
+<td style="text-align: right;">0.900</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>2026-10-19</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8.700</td>
+<td style="text-align: right;">2.100</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>2026-10-23</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">14.600</td>
+<td style="text-align: right;">4.000</td>
+</tr>
+<tr>
+<td>S4</td>
+<td>2026-10-27</td>
+<td style="text-align: right;">15.7</td>
+<td style="text-align: right;">21.400</td>
+<td style="text-align: right;">6.200</td>
+</tr>
+</tbody>
+</table>
+<p>以上均为合成 CSV 的节点统计值。[D1] 最终阶段地表最大沉降为 21.400 mm，对应节点 1039，局部坐标 [30.0, 0.0, 5.0] m。坑底最大隆起为 6.200 mm，对应节点 2018，局部坐标 [0.0, 15.7, 0.0] m。节点极值不能代表导出区域之外的真实极值。</p>
+<h2>5 演示控制指标比较</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">计算值 mm</th>
+<th style="text-align: right;">演示阈值 mm</th>
+<th style="text-align: right;">比值</th>
+<th>数值比较</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>地表累计沉降</td>
+<td style="text-align: right;">21.400</td>
+<td style="text-align: right;">20.000</td>
+<td style="text-align: right;">107.0%</td>
+<td>超过演示阈值</td>
+</tr>
+<tr>
+<td>坑底累计隆起</td>
+<td style="text-align: right;">6.200</td>
+<td style="text-align: right;">10.000</td>
+<td style="text-align: right;">62.0%</td>
+<td>未超过演示阈值</td>
+</tr>
+</tbody>
+</table>
+<p>比较阈值来源：demo_project_brief.md“合成数据和演示控制值”。地表 20 mm、坑底 10 mm 均为人为设置的软件测试值，非规范限值或正式设计控制值。阈值触发只证明比较规则有效，不形成真实工程超限或安全结论。</p>
+<h2>6 变形特征、工程解释与监测建议</h2>
+<p>本案例为公开演示案例（DEMO-PIT-001），四阶段数据由确定性公式构造，未实施现场监测或数值求解，以下变形特征仅用于说明统计口径与报告组织方式，不代表任何真实基坑的实测表现。按统一基准统计，S1～S4 开挖深度分别为 4、8、12、15.7 m，地表最大累计沉降依次为 3.8、8.7、14.6、21.4 mm，坑底最大累计隆起依次为 0.9、2.1、4.0、6.2 mm [E4][D1]。各阶段位移均相对于同一初始基准，阶段累计值不能相加，也不能把不同节点的极值差当作同一测点的变化速率 [E2]。按演示配置的 20 mm 与 10 mm 比较阈值，S4 地表累计沉降为 21.4 mm，比值为 1.07，超过演示阈值；坑底累计隆起为 6.2 mm，比值为 0.62，未超过演示阈值 [D1][E5]。这两个阈值是人为设定的比较值，不是规范允许值，上述比较只验证软件规则，不构成安全或合规结论 [E5]。</p>
+<p>从极值位置看，四阶段地表最大向下位移均出现在节点 1039，坐标为 (30.0, 0.0, 5.0) m；坑底最大向上位移均出现在节点 2018，坐标为 (0.0, 15.7, 0.0) m [D1][E3]。这说明在本演示数据中，极值位置在各阶段保持稳定，但该结论只针对已导出的 72 个地表节点和 35 个坑底节点，不能外推为整个场地的空间分布规律 [E3]。S4 地表位移范围为 2.1335～21.4 mm，均值为 11.7643 mm；坑底向上位移范围为 1.3548～6.2 mm，均值为 3.2996 mm [D1]。均值与极值同步增大只能说明该组导出节点的统计量随开挖深度变化，不能据此证明影响范围扩展，也不能证明软土层厚度、卸荷机制或支护形式的作用 [E8]。</p>
+<p>工程解释方面，演示资料假定基坑深 15.7 m，采用地下连续墙加内支撑，地层自上而下为填土、黏性土、软弱淤泥质土和砂性土，坑底附近假定存在软弱土，并假定存在地下水 [E7][E8]。这些背景均为虚构，且未提供强度、刚度、渗透参数以及水位、孔隙水压力、支撑内力和测斜资料 [E7][E8]。因此，降水、开挖卸荷与支护变形只能作为待验证的分析方向，不能由单一位移极值确定因果机制，也不能据此判断抗突涌或整体稳定性 [E8]。周边道路、建筑和管线同样属于假定环境，本案例未对任何实际对象进行调查 [E6]。若后续进入真实项目，应把周边环境调查、地层参数复核和地下水条件核实列为前置工作，而不是沿用本演示的假定 [E6][E7]。</p>
+<p>监测建议应围绕可复核、可追溯展开。其一，按分区、节点编号、位移方向和基准阶段组织地表沉降与坑底隆起记录，保留极值节点坐标，避免混用不同方向的限值 [E1][E3]。其二，补充同一测点的时间序列与可信时间间隔，在具备条件后再计算变化速率，当前数据不支持 mm/d 指标 [E2]。其三，针对节点 1039 与节点 2018 所在位置布设复核测点，并结合周边道路、管线和建筑调查确定重点保护对象 [E6]。其四，补充水位、孔隙水压力、支撑内力与测斜等配套观测，用于检验前述待验证机制 [E8]。规范依据方面，现有证据仅提供 DB4201/T 738-2025《基坑工程自动化监测技术规程》的官方检索入口，未含条文原文或限值，实际引用前须取得有权使用的文本并核对版本与适用范围 [E9]。</p>
+<h2>7 结论与复核事项</h2>
+<p>在所设演示工况中，阶段 S4 地表最大累计沉降 21.400 mm，坑底最大累计隆起 6.200 mm。系统已分别完成方向判别、区域统计及演示阈值比较。[D1]</p>
+<p>本报告未执行实际 FLAC3D 求解，未核查网格、材料、边界、初始平衡和加载收敛，也未取得真实监测的基准点、仪器检定、原始记录及项目设计控制值。因此，本成果仅能作为报告格式、数据接口与专业对话流程的示例。正式使用时须替换真实项目资料及实测/计算数据，由专业人员复核、补充并签认。</p>
+<h2>8 检索证据与数据附件</h2>
+<ul>
+<li>[E1] <strong>analysis_method.md</strong>，控制指标。程序采用的数据定义与分析方法，非工程规范。</li>
+<li>[E2] <strong>analysis_method.md</strong>，阶段与基准。程序采用的数据定义与分析方法，非工程规范。</li>
+<li>[E3] <strong>analysis_method.md</strong>，坐标与方向。程序采用的数据定义与分析方法，非工程规范。</li>
+<li>[E4] <strong>demo_project_brief.md</strong>，四阶段数据。四阶段工况、坐标与控制阈值全部人为构造。</li>
+<li>[E5] <strong>demo_project_brief.md</strong>，演示控制值。四阶段工况、坐标与控制阈值全部人为构造。</li>
+<li>[E6] <strong>synthetic_geotech.md</strong>，周边环境。完全虚构的勘察背景，仅用于软件演示；无真实工程参数效力。</li>
+<li>[E7] <strong>synthetic_geotech.md</strong>，地层与基坑条件。完全虚构的勘察背景，仅用于软件演示；无真实工程参数效力。</li>
+<li>[E8] <strong>synthetic_geotech.md</strong>，地下水与解释边界。完全虚构的勘察背景，仅用于软件演示；无真实工程参数效力。</li>
+<li>
+<p>[E9] <strong>standard_catalog.md</strong>，武汉市自动化监测规程资料入口。只含外部官方检索入口，不含标准全文或具体限值。 <a href="https://ba.sacinfo.org.cn/">官方来源</a></p>
+</li>
+<li>
+<p>[D1] data/cases/demo/case.json 与同目录 ground_s1.csv～ground_s4.csv、bottom_s1.csv～bottom_s4.csv；均为合成数据，可逐项复算。</p>
+</li>
+<li>完整检索片段、输入摘要及生成方式随报告 metadata.json 归档；页码为 PDF 物理页码，非正文印刷页码。</li>
+</ul></html>

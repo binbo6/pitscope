@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PitScope · 基坑工程知识助手</title><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css"><link rel="stylesheet" href="/assets/readability.css"></head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="/"><span class="brand-mark">P<span>↘</span></span><span>PitScope<small>基坑工程知识助手</small></span></a>
+  <button class="new-chat" id="new-chat"><span>＋</span> 开始新的分析 <kbd>↵</kbd></button>
+  <div class="nav-label">工作空间 <span>WORKSPACE</span></div>
+  <nav><button class="nav-item active" data-view="chat"><span>◈</span> 专业对话 <i>01</i></button><button class="nav-item" data-view="knowledge"><span>▤</span> 工程知识库 <i id="doc-count">—</i></button><button class="nav-item" data-view="reports"><span>▧</span> 成果报告 <i id="report-count">—</i></button></nav>
+  <div class="nav-label history-label">最近分析</div><div id="history" class="history"></div>
+  <div class="sidebar-bottom"><div class="provider-dot"></div><div><strong id="provider-name">正在连接服务</strong><small id="provider-detail">检索与计算均在本地完成</small></div><span class="version">v0.1</span></div>
+</aside>
+<div class="workspace">
+  <header class="topbar"><div><span class="breadcrumb">工作空间</span><span class="slash">/</span><strong id="page-title">专业对话</strong></div><div class="top-actions"><button class="plain-button mobile-new" id="mobile-new">＋ 新分析</button><span class="local-badge"><b></b> 本地工作空间</span><button class="plain-button" id="sources-toggle">查看资料依据 ↗</button></div></header>
+  <div class="body-grid">
+  <main>
+    <section id="view-chat" class="view active">
+      <div id="welcome" class="welcome">
+        <div class="eyebrow"><span></span> GEOTECHNICAL INTELLIGENCE</div>
+        <h1>把工程数据，<br>写成有依据的分析。</h1>
+        <p class="intro">连接勘察资料、工程规范与位移成果。<br>从一个问题开始，形成可追溯的专业回答与报告初稿。</p>
+        <div class="welcome-tags"><span>资料原文引用</span><span>分阶段位移分析</span><span>Word / PDF 导出</span></div>
+        <div class="suggestion-grid">
+          <button data-question="请分析当前案例的地表沉降与坑底隆起，给出可以直接放入工程报告的专业分析段落。" data-mode="analysis"><span class="suggest-icon">↘</span><strong>分析沉降与隆起</strong><small>读取阶段成果，提取关键变形特征</small><i>↗</i></button>
+          <button data-question="请结合勘察资料说明本案例需要关注的软弱土层、地下水与周边环境问题。" data-mode="qa"><span class="suggest-icon">≋</span><strong>理解工程地质条件</strong><small>检索勘察背景，定位分析关注点</small><i>↗</i></button>
+          <button data-question="演示监测要求 DEMO-M02 对数据异常复核有哪些要求？请说明资料来源与适用范围。" data-mode="qa"><span class="suggest-icon">§</span><strong>查询监测要求</strong><small>查看演示要求与可核查的来源</small><i>↗</i></button>
+          <button data-question="请结合当前勘察资料、规范证据和全部阶段 CSV，生成完整的基坑沉降与坑底隆起监测分析报告。" data-mode="report"><span class="suggest-icon">▧</span><strong>生成完整工程报告</strong><small>汇总数据与证据，导出可编辑成果</small><i>↗</i></button>
+        </div>
+        <div class="workflow"><span>01 选择案例</span><b>→</b><span>02 检索证据</span><b>→</b><span>03 专业分析</span><b>→</b><span>04 交付报告</span></div>
+      </div>
+      <div id="messages" class="messages" aria-live="polite"></div>
+      <form id="chat-form" class="composer">
+        <div class="composer-toolbar"><label class="mode-select"><span>◈</span><select id="mode" aria-label="回答模式"><option value="qa">专业问答</option><option value="analysis">报告段落</option><option value="report">完整报告</option></select></label><label class="engine-select"><select id="engine" aria-label="生成方式"><option value="auto">大模型分析</option><option value="offline">离线证据摘录</option></select></label><span class="context-chip" id="context-chip">已关联演示案例</span></div>
+        <textarea id="question" placeholder="例如：分析最终阶段地表沉降，结合勘察资料给出监测建议…" rows="2" maxlength="6000" required aria-label="输入工程问题"></textarea>
+        <div class="composer-bottom"><span>Enter 发送 · Shift + Enter 换行</span><button class="send-button" id="send" type="submit">发送问题 <span>↑</span></button></div>
+      </form><p class="composer-note">回答保留证据来源；工程数值由程序计算。正式成果需结合真实项目资料复核。</p>
+    </section>
+    <section id="view-knowledge" class="view content-view"><div class="section-heading"><div class="eyebrow">ENGINEERING KNOWLEDGE</div><h1>工程知识库</h1><p>保留原始文件、版本说明与页码，按案例管理资料适用性。</p></div><div class="search-row"><input id="search-query" placeholder="搜索条文、地层、地下水、监测要求…" aria-label="知识库检索"><button id="search-button" class="primary">检索资料</button><button id="upload-doc-open" class="secondary">＋ 导入资料</button></div><div id="search-results"></div><div id="document-list" class="document-list"></div></section>
+    <section id="view-reports" class="view content-view"><div class="section-heading"><div class="eyebrow">REVIEWABLE DELIVERABLES</div><h1>成果报告</h1><p>数据表、分析文字与检索证据一并归档，保留可复算的输入。</p></div><button id="create-report" class="primary">＋ 基于当前案例生成报告</button><div id="report-list" class="report-list"></div></section>
+  </main>
+  <aside class="case-panel"><div class="case-panel-heading"><span>当前分析案例</span><span class="tiny-tag">CASE FILE</span></div><label class="case-picker"><select id="case-select" aria-label="选择分析案例"></select></label><div id="case-banner" class="demo-banner"><span>◉</span><div><strong>流程演示 · 合成数据</strong><small>背景与位移均为公开合成示例</small></div></div><div class="case-description" id="case-description"></div>
+    <div class="panel-divider"></div><div class="panel-subheading">最终阶段关键指标 <span id="latest-stage">S4</span></div><div class="metrics"><div><small>地表最大沉降</small><strong id="ground-metric">—<em>mm</em></strong><span id="ground-status" class="metric-caption"></span></div><div><small>坑底最大隆起</small><strong id="bottom-metric">—<em>mm</em></strong><span id="bottom-status" class="metric-caption"></span></div></div>
+    <div class="panel-subheading chart-title">阶段变形趋势 <span>mm</span></div><div id="stage-chart" class="stage-chart"></div><div class="chart-legend"><span><b></b>地表沉降</span><span><b></b>坑底隆起</span></div><p class="chart-note">同一初始基准下的累计值，阶段值不累加。</p>
+    <div class="panel-divider"></div><div class="panel-subheading">资料覆盖 <span id="coverage-count">—</span></div><div class="coverage"><div><span>▤</span><div><strong>勘察与地质背景</strong><small>完全虚构的勘察背景 · 可复现</small></div><i>已入库</i></div><div><span>§</span><div><strong>工程规范与方法</strong><small>演示监测要求 / 真实规范检索入口</small></div><i>可检索</i></div><div><span>↘</span><div><strong>分阶段位移数据</strong><small id="csv-description">地表与坑底 · 四阶段 CSV</small></div><i>可复算</i></div></div>
+    <button class="import-csv secondary" id="import-csv-open">导入自己的位移 CSV ↗</button><div class="panel-footnote">演示阈值仅用于触发流程，不代表规范限值。异项目资料默认排除。</div>
+  </aside></div>
+</div>
+<dialog id="upload-dialog"><form id="upload-form"><div class="dialog-top"><h2>导入工程资料</h2><button type="button" class="close-dialog" aria-label="关闭">×</button></div><p>支持 PDF、DOCX、Markdown、TXT，单个文件不超过 20 MB。扫描 PDF 需先做 OCR。</p><label>资料文件<input type="file" id="doc-file" accept=".pdf,.docx,.txt,.md" required></label><label>资料类型<select id="doc-kind"><option value="geotech">勘察报告</option><option value="standard">工程规范</option><option value="project">项目资料</option><option value="reference">参考资料</option></select></label><label>适用范围<select id="doc-scope"><option value="reference">异项目 / 参考资料（默认不用于项目判断）</option><option value="current">关联当前选中案例（适用性仍需核实）</option></select></label><button type="submit" class="primary" id="upload-submit">解析并入库</button></form></dialog>
+<dialog id="csv-dialog"><form id="csv-form"><div class="dialog-top"><h2>导入位移成果</h2><button type="button" class="close-dialog" aria-label="关闭">×</button></div><p>创建独立案例，按 +Y 向下、settlement_mm = 1000 × uy_m 解析。导入数据不会继承演示控制值。</p><label>案例名称<input id="csv-name" value="用户导入位移案例" required maxlength="100"></label><label>地表 CSV（必选）<input type="file" id="ground-file" accept=".csv" required></label><label>坑底 CSV（可选）<input type="file" id="bottom-file" accept=".csv"></label><code>gp_id,x_m,y_m,z_m,ux_m,uy_m,uz_m,settlement_mm</code><button type="submit" class="primary" id="csv-submit">校验并创建案例</button></form></dialog>
+<dialog id="evidence-dialog"><div class="dialog-top"><h2>本次回答的资料依据</h2><button type="button" class="close-dialog" aria-label="关闭">×</button></div><div id="evidence-list"></div></dialog>
+<div id="toast" class="toast" role="status"></div><script src="/assets/app.js"></script>
+</body></html>

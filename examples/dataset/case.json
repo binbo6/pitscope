@@ -1,0 +1,64 @@
+{
+  "id": "DEMO-PIT-001",
+  "name": "公开演示 · 基坑沉降与隆起分析",
+  "is_demo": true,
+  "location": "虚构场地 / 演示局部坐标",
+  "depth_m": 15.7,
+  "support": "地下连续墙 + 内支撑（虚构方案）",
+  "baseline": "相对于同一初始基准的累计位移",
+  "description": "完全虚构的勘察背景 + 演示监测要求 + 四阶段合成 CSV + 可追溯报告",
+  "quality": {
+    "data_type": "synthetic",
+    "solver_run": false,
+    "project_linkage_verified": false,
+    "note": "公开示例全部虚构；未实施现场监测或 FLAC3D 求解。"
+  },
+  "stages": [
+    {
+      "id": "S1",
+      "name": "阶段 1 · 演示开挖至 4 m",
+      "date": "2026-10-15",
+      "depth_m": 4,
+      "ground": "examples/dataset/ground_s1.csv",
+      "bottom": "examples/dataset/bottom_s1.csv"
+    },
+    {
+      "id": "S2",
+      "name": "阶段 2 · 演示开挖至 8 m",
+      "date": "2026-10-19",
+      "depth_m": 8,
+      "ground": "examples/dataset/ground_s2.csv",
+      "bottom": "examples/dataset/bottom_s2.csv"
+    },
+    {
+      "id": "S3",
+      "name": "阶段 3 · 演示开挖至 12 m",
+      "date": "2026-10-23",
+      "depth_m": 12,
+      "ground": "examples/dataset/ground_s3.csv",
+      "bottom": "examples/dataset/bottom_s3.csv"
+    },
+    {
+      "id": "S4",
+      "name": "阶段 4 · 演示开挖至 15.7 m",
+      "date": "2026-10-27",
+      "depth_m": 15.7,
+      "ground": "examples/dataset/ground_s4.csv",
+      "bottom": "examples/dataset/bottom_s4.csv"
+    }
+  ],
+  "controls": {
+    "ground": {
+      "metric": "max_downward_mm",
+      "limit_mm": 20,
+      "source": "demo_project_brief.md / 演示控制值（人为设定）",
+      "is_demo": true
+    },
+    "bottom": {
+      "metric": "max_upward_mm",
+      "limit_mm": 10,
+      "source": "demo_project_brief.md / 演示控制值（人为设定）",
+      "is_demo": true
+    }
+  }
+}

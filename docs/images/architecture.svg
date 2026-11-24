@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<title>总体技术架构：知识与数值两路协同</title><desc>一个本地 Python 服务；证据检索与数值统计在本地，文字生成调用配置的模型服务</desc><defs>
+<marker id="a34657A" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#34657A"/></marker>
+<marker id="a6D7A86" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#6D7A86"/></marker>
+<marker id="a647D72" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#647D72"/></marker>
+<marker id="aCEDBD4" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#CEDBD4"/></marker>
+</defs>
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#F6F8F5" stroke="none" stroke-width="1.4"/>
+<rect x="0" y="0" width="17" height="900" rx="0" fill="#24634F" stroke="none" stroke-width="1.4"/>
+<text x="68" y="52.0" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#24634F" text-anchor="start">01  /  SYSTEM ARCHITECTURE</text>
+<text x="68" y="118.0" font-family="Microsoft YaHei, sans-serif" font-size="43" font-weight="700" fill="#173F35" text-anchor="start">总体技术架构：知识与数值两路协同</text>
+<text x="70" y="160.0" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#647D72" text-anchor="start">一个本地 Python 服务；证据检索与数值统计在本地，文字生成调用配置的模型服务</text>
+<rect x="70" y="199" width="1110" height="88" rx="13" fill="#FFFFFF" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="71" y="215" width="5" height="56" rx="0" fill="#24634F" stroke="none" stroke-width="1.4"/>
+<text x="92" y="240.0" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#24634F" text-anchor="start">交互层  ·  浏览器 HTML / CSS / JavaScript</text>
+<text x="92" y="275.08" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#647D72" text-anchor="start">专业问答  /  报告段落  /  完整报告</text>
+<rect x="70" y="317" width="1110" height="83" rx="13" fill="#E9F2EC" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="71" y="333" width="5" height="51" rx="0" fill="#24634F" stroke="none" stroke-width="1.4"/>
+<text x="92" y="358.0" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#24634F" text-anchor="start">服务与编排层  ·  FastAPI + assistant.py</text>
+<text x="92" y="393.08" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#647D72" text-anchor="start">案例关联、历史对话、问题扩展、证据组织与输出模式选择</text>
+<polyline points="625,289 625,311" fill="none" stroke="#647D72" stroke-width="2" stroke-linejoin="round" marker-end="url(#a647D72)"/>
+<rect x="70" y="438" width="532" height="145" rx="13" fill="#FFFFFF" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="71" y="454" width="5" height="113" rx="0" fill="#24634F" stroke="none" stroke-width="1.4"/>
+<text x="92" y="481.0" font-family="Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#24634F" text-anchor="start">知识证据支路</text>
+<text x="92" y="518.9200000000001" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#647D72" text-anchor="start">勘察 / 规范 / 项目资料 → 解析分块</text>
+<text x="92" y="550.0000000000001" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#647D72" text-anchor="start">TF-IDF + BM25 + RRF → [E1…En]</text>
+<rect x="648" y="438" width="532" height="145" rx="13" fill="#FFFFFF" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="649" y="454" width="5" height="113" rx="0" fill="#24634F" stroke="none" stroke-width="1.4"/>
+<text x="670" y="481.0" font-family="Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#24634F" text-anchor="start">数值分析支路</text>
+<text x="670" y="518.9200000000001" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#647D72" text-anchor="start">地表 / 坑底 CSV → 字段与单位校验</text>
+<text x="670" y="550.0000000000001" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#647D72" text-anchor="start">分阶段极值、位置与阈值比较 → [D1]</text>
+<polyline points="336,401 336,432" fill="none" stroke="#647D72" stroke-width="2" stroke-linejoin="round" marker-end="url(#a647D72)"/>
+<polyline points="913,401 913,432" fill="none" stroke="#647D72" stroke-width="2" stroke-linejoin="round" marker-end="url(#a647D72)"/>
+<rect x="70" y="628" width="1110" height="91" rx="13" fill="#E9F2EC" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="71" y="644" width="5" height="59" rx="0" fill="#24634F" stroke="none" stroke-width="1.4"/>
+<text x="92" y="669.0" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#24634F" text-anchor="start">回答组织与报告模板</text>
+<text x="92" y="705.08" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#647D72" text-anchor="start">专业提示词 + 模型分析 / 离线摘录 + 引用编号检查 + 固定数据表</text>
+<polyline points="336,585 336,622" fill="none" stroke="#647D72" stroke-width="2" stroke-linejoin="round" marker-end="url(#a647D72)"/>
+<polyline points="913,585 913,622" fill="none" stroke="#647D72" stroke-width="2" stroke-linejoin="round" marker-end="url(#a647D72)"/>
+<rect x="70" y="754" width="1110" height="62" rx="13" fill="#173F35" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="71" y="770" width="5" height="30" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.4"/>
+<text x="92" y="794.0" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="700" fill="#FFFFFF" text-anchor="start">交付：带引用回答  ·  DOCX / PDF / Markdown / HTML  ·  证据 JSON</text>
+<polyline points="625,721 625,748" fill="none" stroke="#647D72" stroke-width="2" stroke-linejoin="round" marker-end="url(#a647D72)"/>
+<rect x="1220" y="199" width="310" height="230" rx="13" fill="#EFF2F0" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="1221" y="215" width="5" height="198" rx="0" fill="#6D7A86" stroke="none" stroke-width="1.4"/>
+<text x="1242" y="241.0" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#6D7A86" text-anchor="start">本地存储与索引</text>
+<text x="1242" y="277.5" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#647D72" text-anchor="start">SQLite：资料块、元数据、会</text>
+<text x="1242" y="307.1" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#647D72" text-anchor="start">话与报告</text>
+<text x="1242" y="336.7" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#647D72" text-anchor="start"></text>
+<text x="1242" y="366.3" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#647D72" text-anchor="start">内存：TF-IDF / BM25 索引</text>
+<rect x="1220" y="478" width="310" height="254" rx="13" fill="#EAF0F4" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="1221" y="494" width="5" height="222" rx="0" fill="#34657A" stroke="none" stroke-width="1.4"/>
+<text x="1242" y="520.0" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#34657A" text-anchor="start">可配置模型服务</text>
+<text x="1242" y="556.5" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#647D72" text-anchor="start">当前：DeepSeek API</text>
+<text x="1242" y="586.1" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#647D72" text-anchor="start">可替换：本机兼容服务</text>
+<text x="1242" y="615.7" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#647D72" text-anchor="start"></text>
+<text x="1242" y="645.3" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#647D72" text-anchor="start">接收检索片段、统计摘要及近</text>
+<text x="1242" y="674.9" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#647D72" text-anchor="start">期对话</text>
+<polyline points="1181,359 1209,359" fill="none" stroke="#6D7A86" stroke-width="2" stroke-linejoin="round" marker-end="url(#a6D7A86)"/>
+<polyline points="1181,673 1204,673 1204,604 1214,604" fill="none" stroke="#34657A" stroke-width="2" stroke-linejoin="round" marker-end="url(#a34657A)"/>
+<polyline points="1218,704 1193,704 1193,701 1185,701" fill="none" stroke="#34657A" stroke-width="2" stroke-linejoin="round" marker-end="url(#a34657A)"/>
+<text x="1230" y="780.0" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#647D72" text-anchor="start">当前未集成 LangGraph</text>
+<text x="1230" y="805.56" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#647D72" text-anchor="start">未使用 Chroma / 神经 Embedding</text>
+<polyline points="70,835 1530,835" fill="none" stroke="#CEDBD4" stroke-width="1" stroke-linejoin="round"/>
+<text x="70" y="864.0" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#647D72" text-anchor="start">依据：pit/server.py、assistant.py、knowledge.py、analysis.py、llm.py、reporting.py</text>
+<text x="1530" y="864.0" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#24634F" text-anchor="end">PitScope  |  02 / 10</text>
+</svg>

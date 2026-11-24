@@ -1,0 +1,8 @@
+[
+  {"file":"synthetic_geotech.md","kind":"geotech","scope":"demo","note":"完全虚构的勘察背景，仅用于软件演示；无真实工程参数效力。"},
+  {"file":"demo_project_brief.md","kind":"project","scope":"demo","note":"四阶段工况、坐标与控制阈值全部人为构造。"},
+  {"file":"demo_monitoring_guide.md","kind":"method","scope":"demo","note":"人为编写的监测流程示例；DEMO 编号不是国家、地方或行业标准。"},
+  {"file":"analysis_method.md","kind":"method","scope":"general","note":"程序采用的数据定义与分析方法，非工程规范。"},
+  {"file":"standard_catalog.md","kind":"standard","scope":"hubei","note":"只含外部官方检索入口，不含标准全文或具体限值。","url":"https://ba.sacinfo.org.cn/"},
+  {"file":"other_project.md","kind":"reference","scope":"reference","note":"虚构异项目，默认排除于当前案例的证据检索。"}
+]

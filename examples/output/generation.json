@@ -1,0 +1,7 @@
+{
+  "case_id": "DEMO-PIT-001",
+  "engine": "deepseek-chat",
+  "data_type": "synthetic",
+  "documents": "examples/corpus",
+  "note": "Model-generated narrative using only the synthetic public corpus and computed summary."
+}

@@ -1,0 +1,275 @@
+{
+  "case_id": "DEMO-PIT-001",
+  "is_demo": true,
+  "stages": [
+    {
+      "id": "S1",
+      "name": "阶段 1 · 演示开挖至 4 m",
+      "date": "2026-10-15",
+      "depth_m": 4,
+      "regions": {
+        "ground": {
+          "count": 72,
+          "max_downward_mm": 3.8,
+          "max_upward_mm": 0,
+          "downward_point": {
+            "id": 1039,
+            "xyz_m": [
+              30.0,
+              0.0,
+              5.0
+            ]
+          },
+          "upward_point": null,
+          "mean_signed_mm": 2.089,
+          "range_mm": [
+            0.3788,
+            3.8
+          ],
+          "source": "examples/dataset/ground_s1.csv"
+        },
+        "bottom": {
+          "count": 35,
+          "max_downward_mm": 0,
+          "max_upward_mm": 0.9,
+          "downward_point": null,
+          "upward_point": {
+            "id": 2018,
+            "xyz_m": [
+              0.0,
+              15.7,
+              0.0
+            ]
+          },
+          "mean_signed_mm": -0.479,
+          "range_mm": [
+            -0.9,
+            -0.1967
+          ],
+          "source": "examples/dataset/bottom_s1.csv"
+        }
+      }
+    },
+    {
+      "id": "S2",
+      "name": "阶段 2 · 演示开挖至 8 m",
+      "date": "2026-10-19",
+      "depth_m": 8,
+      "regions": {
+        "ground": {
+          "count": 72,
+          "max_downward_mm": 8.7,
+          "max_upward_mm": 0,
+          "downward_point": {
+            "id": 1039,
+            "xyz_m": [
+              30.0,
+              0.0,
+              5.0
+            ]
+          },
+          "upward_point": null,
+          "mean_signed_mm": 4.7827,
+          "range_mm": [
+            0.8674,
+            8.7
+          ],
+          "source": "examples/dataset/ground_s2.csv"
+        },
+        "bottom": {
+          "count": 35,
+          "max_downward_mm": 0,
+          "max_upward_mm": 2.1,
+          "downward_point": null,
+          "upward_point": {
+            "id": 2018,
+            "xyz_m": [
+              0.0,
+              15.7,
+              0.0
+            ]
+          },
+          "mean_signed_mm": -1.1176,
+          "range_mm": [
+            -2.1,
+            -0.4589
+          ],
+          "source": "examples/dataset/bottom_s2.csv"
+        }
+      }
+    },
+    {
+      "id": "S3",
+      "name": "阶段 3 · 演示开挖至 12 m",
+      "date": "2026-10-23",
+      "depth_m": 12,
+      "regions": {
+        "ground": {
+          "count": 72,
+          "max_downward_mm": 14.6,
+          "max_upward_mm": 0,
+          "downward_point": {
+            "id": 1039,
+            "xyz_m": [
+              30.0,
+              0.0,
+              5.0
+            ]
+          },
+          "upward_point": null,
+          "mean_signed_mm": 8.0261,
+          "range_mm": [
+            1.4556,
+            14.6
+          ],
+          "source": "examples/dataset/ground_s3.csv"
+        },
+        "bottom": {
+          "count": 35,
+          "max_downward_mm": 0,
+          "max_upward_mm": 4.0,
+          "downward_point": null,
+          "upward_point": {
+            "id": 2018,
+            "xyz_m": [
+              0.0,
+              15.7,
+              0.0
+            ]
+          },
+          "mean_signed_mm": -2.1288,
+          "range_mm": [
+            -4.0,
+            -0.8741
+          ],
+          "source": "examples/dataset/bottom_s3.csv"
+        }
+      }
+    },
+    {
+      "id": "S4",
+      "name": "阶段 4 · 演示开挖至 15.7 m",
+      "date": "2026-10-27",
+      "depth_m": 15.7,
+      "regions": {
+        "ground": {
+          "count": 72,
+          "max_downward_mm": 21.4,
+          "max_upward_mm": 0,
+          "downward_point": {
+            "id": 1039,
+            "xyz_m": [
+              30.0,
+              0.0,
+              5.0
+            ]
+          },
+          "upward_point": null,
+          "mean_signed_mm": 11.7643,
+          "range_mm": [
+            2.1335,
+            21.4
+          ],
+          "source": "examples/dataset/ground_s4.csv"
+        },
+        "bottom": {
+          "count": 35,
+          "max_downward_mm": 0,
+          "max_upward_mm": 6.2,
+          "downward_point": null,
+          "upward_point": {
+            "id": 2018,
+            "xyz_m": [
+              0.0,
+              15.7,
+              0.0
+            ]
+          },
+          "mean_signed_mm": -3.2996,
+          "range_mm": [
+            -6.2,
+            -1.3548
+          ],
+          "source": "examples/dataset/bottom_s4.csv"
+        }
+      }
+    }
+  ],
+  "latest": {
+    "id": "S4",
+    "name": "阶段 4 · 演示开挖至 15.7 m",
+    "date": "2026-10-27",
+    "depth_m": 15.7,
+    "regions": {
+      "ground": {
+        "count": 72,
+        "max_downward_mm": 21.4,
+        "max_upward_mm": 0,
+        "downward_point": {
+          "id": 1039,
+          "xyz_m": [
+            30.0,
+            0.0,
+            5.0
+          ]
+        },
+        "upward_point": null,
+        "mean_signed_mm": 11.7643,
+        "range_mm": [
+          2.1335,
+          21.4
+        ],
+        "source": "examples/dataset/ground_s4.csv"
+      },
+      "bottom": {
+        "count": 35,
+        "max_downward_mm": 0,
+        "max_upward_mm": 6.2,
+        "downward_point": null,
+        "upward_point": {
+          "id": 2018,
+          "xyz_m": [
+            0.0,
+            15.7,
+            0.0
+          ]
+        },
+        "mean_signed_mm": -3.2996,
+        "range_mm": [
+          -6.2,
+          -1.3548
+        ],
+        "source": "examples/dataset/bottom_s4.csv"
+      }
+    }
+  },
+  "checks": [
+    {
+      "region": "ground",
+      "label": "地表累计沉降",
+      "actual_mm": 21.4,
+      "limit_mm": 20,
+      "ratio": 1.07,
+      "exceeded": true,
+      "source": "demo_project_brief.md / 演示控制值（人为设定）",
+      "is_demo": true
+    },
+    {
+      "region": "bottom",
+      "label": "坑底累计隆起",
+      "actual_mm": 6.2,
+      "limit_mm": 10,
+      "ratio": 0.62,
+      "exceeded": false,
+      "source": "demo_project_brief.md / 演示控制值（人为设定）",
+      "is_demo": true
+    }
+  ],
+  "coordinate_convention": "+Y 向下，settlement_mm = 1000 × uy_m；负值表示向上位移",
+  "quality": {
+    "data_type": "synthetic",
+    "solver_run": false,
+    "project_linkage_verified": false,
+    "note": "公开示例全部虚构；未实施现场监测或 FLAC3D 求解。"
+  }
+}

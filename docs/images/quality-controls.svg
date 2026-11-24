@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<title>数据校验与证据约束：明确哪些由程序保证</title><desc>输入有效性采用确定性检查；真实性、求解质量和工程适用性保留为待核事项</desc><defs>
+<marker id="aCEDBD4" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#CEDBD4"/></marker>
+</defs>
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#F6F8F5" stroke="none" stroke-width="1.4"/>
+<rect x="0" y="0" width="17" height="900" rx="0" fill="#24634F" stroke="none" stroke-width="1.4"/>
+<text x="68" y="52.0" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#24634F" text-anchor="start">05  /  DATA &amp; EVIDENCE CONTROLS</text>
+<text x="68" y="118.0" font-family="Microsoft YaHei, sans-serif" font-size="43" font-weight="700" fill="#173F35" text-anchor="start">数据校验与证据约束：明确哪些由程序保证</text>
+<text x="70" y="160.0" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#647D72" text-anchor="start">输入有效性采用确定性检查；真实性、求解质量和工程适用性保留为待核事项</text>
+<rect x="70" y="207" width="460" height="563" rx="13" fill="#FFFFFF" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="70" y="207" width="460" height="89" rx="13" fill="#E9F2EC" stroke="none" stroke-width="1.4"/>
+<text x="92" y="249.0" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#24634F" text-anchor="start">A  输入有效性</text>
+<text x="92" y="282.0" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#24634F" text-anchor="start">程序检查并拒绝异常</text>
+<rect x="570" y="207" width="460" height="563" rx="13" fill="#FFFFFF" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="570" y="207" width="460" height="89" rx="13" fill="#EAF0F4" stroke="none" stroke-width="1.4"/>
+<text x="592" y="249.0" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#34657A" text-anchor="start">B  指标与引用约束</text>
+<text x="592" y="282.0" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#34657A" text-anchor="start">程序规则 + 提示词约束</text>
+<rect x="1070" y="207" width="460" height="563" rx="13" fill="#FFFFFF" stroke="#CEDBD4" stroke-width="1.4"/>
+<rect x="1070" y="207" width="460" height="89" rx="13" fill="#FAF0DE" stroke="none" stroke-width="1.4"/>
+<text x="1092" y="249.0" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#AE7935" text-anchor="start">C  工程真实性与质量</text>
+<text x="1092" y="282.0" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#AE7935" text-anchor="start">状态保留，待补资料核实</text>
+<text x="93" y="343.0" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">必需字段完整</text>
+<text x="93" y="375.55" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">地表 CSV 必选，坑底可选</text>
+<polyline points="92,411 505,411" fill="none" stroke="#CEDBD4" stroke-width="1" stroke-linejoin="round"/>
+<text x="593" y="343.0" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">地表沉降与坑底隆起分开</text>
+<text x="593" y="375.55" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">相应控制指标分别匹配</text>
+<polyline points="592,411 1005,411" fill="none" stroke="#CEDBD4" stroke-width="1" stroke-linejoin="round"/>
+<text x="1093" y="343.0" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">合成数据 / 用户导入数据</text>
+<text x="1093" y="375.55" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">显式区分来源性质</text>
+<polyline points="1092,411 1505,411" fill="none" stroke="#CEDBD4" stroke-width="1" stroke-linejoin="round"/>
+<text x="93" y="449.0" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">节点唯一、数值有限</text>
+<text x="93" y="481.55" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">重复 ID / NaN / Inf 拒绝</text>
+<polyline points="92,517 505,517" fill="none" stroke="#CEDBD4" stroke-width="1" stroke-linejoin="round"/>
+<text x="593" y="449.0" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">控制值须有来源且为有限正数</text>
+<text x="593" y="481.55" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">无有效控制值不比较</text>
+<polyline points="592,517 1005,517" fill="none" stroke="#CEDBD4" stroke-width="1" stroke-linejoin="round"/>
+<text x="1093" y="449.0" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">项目资料是否同一工程</text>
+<text x="1093" y="481.55" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">异项目默认排除</text>
+<polyline points="1092,517 1505,517" fill="none" stroke="#CEDBD4" stroke-width="1" stroke-linejoin="round"/>
+<text x="93" y="555.0" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">settlement_mm = 1000 × uy_m</text>
+<text x="93" y="587.55" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">换算误差容许值 0.001 mm</text>
+<polyline points="92,623 505,623" fill="none" stroke="#CEDBD4" stroke-width="1" stroke-linejoin="round"/>
+<text x="593" y="555.0" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">引用编号须属于本次证据集</text>
+<text x="593" y="587.55" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">编号有效不等于解释正确</text>
+<polyline points="592,623 1005,623" fill="none" stroke="#CEDBD4" stroke-width="1" stroke-linejoin="round"/>
+<text x="1093" y="555.0" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">材料 / 边界 / 收敛状态</text>
+<text x="1093" y="587.55" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">当前系统不自动验算</text>
+<polyline points="1092,623 1505,623" fill="none" stroke="#CEDBD4" stroke-width="1" stroke-linejoin="round"/>
+<text x="93" y="661.0" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">正值向下，负值向上</text>
+<text x="93" y="693.55" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">缺失部位标为“未提供”</text>
+<text x="593" y="661.0" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">累计阶段值不相加</text>
+<text x="593" y="693.55" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">极值差不直接当作节点速率</text>
+<text x="1093" y="661.0" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">工程限值与适用规范</text>
+<text x="1093" y="693.55" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#173F35" text-anchor="start">正式结论需专业人员复核</text>
+<text x="76" y="812.0" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="400" fill="#647D72" text-anchor="start">汇报表述：已实现输入校验与约束机制；尚未完成真实工程验证与生成内容质量的定量评测。</text>
+<polyline points="70,835 1530,835" fill="none" stroke="#CEDBD4" stroke-width="1" stroke-linejoin="round"/>
+<text x="70" y="864.0" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#647D72" text-anchor="start">依据：pit/analysis.py、knowledge.py、assistant.py、llm.py；tests/test_system.py</text>
+<text x="1530" y="864.0" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#24634F" text-anchor="end">PitScope  |  06 / 10</text>
+</svg>

@@ -1,0 +1,9 @@
+.mobile-new{display:none}
+.intro{font-size:14px}.suggestion-grid strong{font-size:14px}.suggestion-grid small{font-size:11px}
+.welcome-tags span{font-size:10px}.composer textarea{font-size:13px}.composer select{font-size:11px}
+.message.assistant .message-text{font-size:14px}.message-text table{font-size:12px}
+.case-panel-heading{font-size:12px}.case-description{font-size:11px}.coverage strong{font-size:11px}
+.coverage small{font-size:9px}.panel-footnote,.chart-note{font-size:9px}
+.document-card p,.report-card p{font-size:12px}.document-card h3,.report-card h3{font-size:14px}
+.evidence-card p{font-size:13px}.section-heading p{font-size:14px}
+@media(max-width:600px){.mobile-new{display:block}.intro{font-size:12px}.suggestion-grid strong{font-size:12px}.suggestion-grid small{font-size:10px}.welcome-tags span{font-size:9px}.topbar{padding:0 16px}.top-actions{gap:4px}.slash{margin:0 8px}.composer select{font-size:10px}.message.assistant .message-text{font-size:13px}}
